@@ -18,7 +18,7 @@ class Temperature
 
   def to_celsius
     if @Ftemp
-      return @Ftemp*1.8+32
+      return (@Ftemp-32) *5.0/9.0
     else
       return @Ctemp
     end
